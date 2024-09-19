@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+<title>Ice cream Survey</title>
+<style>
+    body{
+    background-color: rgb(255, 251, 171);
+    }
+    .center {     
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 30%; /* or any other percentage */
+    }
+
+</style>
+</head>
+
+<body>
+    <header> <!--Header semantic tag for organization-->
+        <h1>This is a survey about ice cream flavours</h1>
+        <h2>Please fill out this survey</h2>
+        <nav><!--Nav semantic tag fpr organization-->
+            <a href="Links-and-Images.html" > Images </a> 
+                <a href="iframes-list-tables.html" > Tables</a>
+
+
+        </nav>
+    </header>
+    <br/>
+    <figure>
+        <img src="Images/ice.jpg" width="200" height="200" class="center"/>
+        <figcaption>
+            <p class="center"><b>Picture of vanilla ice cream in a waffle cone</b> </p>
+        </figcaption>
+    </figure>
+    
+<form action="Thank you.html">
+    <label for="email">Email:</label><br/>
+   <input type="email" id="email" name="email">
+   <br/>
+   <label for="pwd">Password:</label><br>
+   <input type="password" id="pwd" name="pwd" minlength="10"maxlength="12"><br/>
+   <label for="FullName"> Full Name:</label><br/>
+    <input type="text" id="FullName" name="Full Name"><br/>
+    <label for="phone"> phone number:</label><br/>
+  <input type="tel" id="phone" name="phone" pattern="{431}-{556-7049}"></br>
+    <label for="Age"> Age:</label><br/>
+    <input type="number" id="Age" name="Age"><br/>
+    <h4> Which of these taste best in your opinion?<br/>Click all that apply</h4>
+    <input type="checkbox" id="" name="flavour 1" value="Butterscotch">
+    <label for="Flavour1"> Butterscotch</label><br>
+    <input type="checkbox" id="flavour2" name="flavour2" value="Cookies and cream">
+    <label for="flavour2"> Cookies and cream</label><br>
+    <input type="checkbox" id="flavour3" name="Rocky Road" value="Rocky Road">
+    <label for="flavour3"> Rocky Road</label><br/>
+    <input type="checkbox" id="flavour 4"name="Neapolitan" value="Neapolitan">
+    <label for="flavour 4">Neapolitan</label><br/>
+    <h4>Pick one</h4>
+    <input type="radio" id="flavour" name="Chocolate" value="Chocolate">
+    <label for="Chocolate">Chocolate</label><br>
+    <input type="radio" id="flavour" name="Vanilla" value="Vanilla">
+    <label for="flavour">Vanilla</label><br>
+    <input type="radio" id="flavour" name="strawberry" value="JavaScript">
+    <label for="Strawberry">Strawberry</label><br/>
+    <br/>
+    <label for="story">Tell us your favorite Ice cream</label>
+    <br/>
+    <textarea id="story" name="story"
+    rows="5" cols="33"></textarea>
+    <br/>
+    <br/>
+    <label for="cones">Choose a cone</label>
+    <select name="cones" id="cones"> 
+    <option value="Waffle cone">Waffle cone</option>
+    <option value="Sugar cone">Sugar cone</option>
+    <option value="Dipped cone">Dipped cone</option>
+    <option value="Cake cone">Cake cone</option></select>
+    <br/>
+    <br/>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+
+</form> 
+
+
+
+<footer>
+    <p style="color: rgb(26, 181, 181);" class="center">  <u>Ice cream</u> </p> <!--<u> is to make the text underlined. it is a text decoration-->
+</footer>
+
+</body>
+</html>  
