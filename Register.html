@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+    <title>Register</title>
+    <style>
+      body {
+        background-color: rgb(255, 136, 192);
+      }
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 24%; /* or any other percentage */
+      }
+      .move {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 42%; /* or any other percentage */
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="center"><u>Register Now</u></h1>
+    <h4 class="move">
+      &nbsp; &nbsp;
+      <i>To keep up with the latest trends and add new items to your closet</i>
+    </h4>
+     <section>
+    <form action="Thank you.html" method="get">
+      <!-- Form submits data to 'Thank you.html' using GET method -->
+      <div style="background-color: rgb(206, 40, 96)" class="center">
+        <!-- Container for form inputs with a background color -->
+        <!-- Input for Full Name -->
+        <label for="FullName"> &nbsp; Full Name:</label><br />
+        &nbsp; &nbsp;
+        <input type="text" id="FullName" name="Full Name" /><br /><br />
+
+        <!-- Input for Age -->
+        <label for="Age"> &nbsp; Age:</label><br />
+        &nbsp; &nbsp; <input type="number" id="Age" name="Age" /><br /><br />
+
+        <!-- Input for Email -->
+        <label for="email"> &nbsp;Email:</label><br />
+        &nbsp; &nbsp; <input type="email" id="email" name="email" /><br /><br />
+
+        <!-- Input for Password -->
+        <label for="pwd"> &nbsp;Password:</label><br />
+        &nbsp; &nbsp;
+        <input
+          type="password"
+          id="pwd"
+          name="pwd"
+          minlength="10"
+          maxlength="12" /><br /><br />
+
+        <!-- Input for Phone Number -->
+        <label for="phone"> &nbsp; Phone Number:</label><br />
+        &nbsp; &nbsp;
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="\(\d{3}\) \d{3}-\d{4}"
+          placeholder="(123) 456-7890"
+          required /><br />
+
+        <!-- Input for Birthday Week -->
+        <label for="week"> &nbsp;Select your birthday week :</label><br />
+        &nbsp; &nbsp;<input type="week" id="week" name="week" /><br /><br />
+
+        <!-- Submit and Reset buttons -->
+        &nbsp; &nbsp; &nbsp; <input type="submit" value="Submit" /> &nbsp;
+        <input type="reset" value="Reset" />
+      </div>
+      </form>
+    </section>
+      <br />
+      
+
+      <!-- Section for survey -->
+       <section>
+      <h2>Please complete this survey to help our website</h2>
+      <h4>
+        Which of these is the best fashion trend in your opinion?<br />Click all
+        that apply
+      </h4>
+
+      <!-- Checkbox inputs for fashion trends -->
+      <input type="checkbox" id="trend1" name="Y2K" value="Y2K" />
+      <label for="trend1"> Y2K</label><br />
+
+      <input
+        type="checkbox"
+        id="trend2"
+        name="90s_pop"
+        value="90s pop/ 90's in general" />
+      <label for="trend2"> 90's pop/ 90's in general</label><br />
+
+      <input
+        type="checkbox"
+        id="trend3"
+        name="preppy_minimalist"
+        value="preppy/ minimalist/ (clean)" />
+      <label for="trend3"> preppy/ minimalist/ (clean)</label><br />
+
+      <input type="checkbox" id="trend4" name="Boho" value="Boho" />
+      <label for="trend4">Boho</label><br /><br />
+
+      <!-- Dropdown for color/aesthetic choice -->
+      <label for="cones">Choose a color/ aesthetic</label><br />
+      <select name="color" id="color">
+        <option value="Bright colors">Bright colors(pink,red..)</option>
+        <option value="Dark colors">Dark colors(navy blue, black...)</option>
+        <option value="Neutral colors">Neutral colors(tan, beige...)</option>
+        <option value="Metallic colors">
+          Metallic colors(copper, silver...)
+        </option>
+      </select>
+      <br /><br />
+
+      <!-- Textarea for favorite fashion trend -->
+      <label for="story">Tell us your favorite fashion trend </label><br />
+      <textarea id="story" name="story" rows="5" cols="33"></textarea>
+      <br />
+
+      <!-- Input for Google search -->
+      <label for="gsearch">Search Google:</label><br />
+      <input type="search" id="gsearch" name="gsearch" />
+      <br />
+
+      <!-- Submit and Reset buttons for the survey -->
+      <input type="submit" value="Submit" /> &nbsp;
+      <input type="reset" value="Reset" />
+    </form>
+    </section>
+  </body>
+</html>
